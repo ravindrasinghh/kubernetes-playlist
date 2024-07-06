@@ -52,7 +52,7 @@ jobs:
       working-directory: terraform-infra
       
     - name: Terraform Plan
-      run: terraform plan --var-file=dev.terraform.tfvars
+      run: terraform plan
       working-directory: terraform-infra
       
 
