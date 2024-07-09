@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: myapp-config
 data:
-  S3_BUCKET: "codedevops-staging-photoapp-ui"
+  S3_BUCKET: "codedevops-default-photoapp-ui"
   CLOUDFRONT_DOMAIN: "share.codedevops.cloud"
 ---
 apiVersion: apps/v1
