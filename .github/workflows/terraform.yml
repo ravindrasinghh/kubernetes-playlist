@@ -49,9 +49,11 @@ jobs:
         terraform init
         terraform fmt -check
         terraform validate -no-color
+      working-directory: terraform-infra
       
     - name: Terraform Plan
       run: terraform plan
+      working-directory: terraform-infra
       
 
   infrastructure-audit:
