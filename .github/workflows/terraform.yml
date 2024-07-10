@@ -49,10 +49,12 @@ jobs:
         terraform init
         terraform fmt -check
         terraform validate -no-color
+        aws eks update-kubeconfig --region ap-south-1 --name codedevops-cluster
       working-directory: terraform-infra
       
     - name: Terraform Plan
-      run: terraform plan
+      run: | 
+        terraform plan
       working-directory: terraform-infra
       
 
