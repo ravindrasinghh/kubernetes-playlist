@@ -32,7 +32,7 @@ environments = {
         user_arn = []
       }
       admin = {
-        user_arn = ["arn:aws:iam::434605749312:root"]
+        user_arn = ["arn:aws:iam::434605749312:root", "arn:aws:iam::434605749312:role/EksCodeBuildKubectlRole"]
       }
     }
     # EKS Addons variables 
