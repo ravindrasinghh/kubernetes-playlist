@@ -1,3 +1,11 @@
+
+terraform {
+  backend "s3" {
+    bucket = "devsecops-backend-codedevops"
+    key    = "secops-dev.tfstae"
+    region = "ap-south-1"
+  }
+}
 terraform {
   required_version = ">= 0.15.0"
   required_providers {
